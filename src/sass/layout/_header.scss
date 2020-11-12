@@ -1,7 +1,14 @@
 .header {
   padding-top: 30px;
-
   align-items: center;
+
+  &-navigation-item {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 .mobile-menu-btn:hover,
 .mobile-menu-btn:focus {
@@ -28,7 +35,7 @@
     height: 45px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1343px) {
   .header {
     padding-top: 37px;
     display: flex;
@@ -43,7 +50,7 @@
   }
 }
 
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1343px) {
   .header {
     justify-content: space-between;
   }
@@ -58,13 +65,16 @@
     outline: none;
   }
 }
-@media screen and (min-width: 1315px) {
+@media screen and (min-width: 1344px) {
   .header {
     display: flex;
 
+    &-navigation {
+      margin-right: 60px;
+    }
+
     &-navigation-list {
       display: flex;
-      margin-right: 60px;
     }
   }
   .logo-link {
