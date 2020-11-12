@@ -8,18 +8,49 @@
 </head>
 
 <body>
-  <header class="header-section">
-    <a href="./index.html" class="logo">
-      <svg class="logo">
-        <use hreff="./images/sprite.svg#logo-light-them"></use>
-      </svg>
-    </a>
-  </header>
-  <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-  <include src="./partials/example.html"></include>
+  <header class="header container">
 
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-  <script src="./index.js"></script>
+    <svg class="logo-light-them" width="80" height="28">
+      <use href="./images/sprite.svg#logo-light-them"></use>
+    </svg>
+    <nav class="header-navigation">
+      <ul class="header-navigation-list">
+        <li class="header-navigation-item">Программы обучения</li>
+        <li class="header-navigation-item">О нас</li>
+        <li class="header-navigation-item">Варианты обучения</li>
+        <li class="header-navigation-item">Контакты</li>
+      </ul>
+      <button type="button" class="modal-btn">Консультация по телефону</button>
+    </nav>
+    <button class="mobile-menu-btn" type="button" data-modal-open>
+      <svg class="mobile-icons" width="20" height="12">
+        <use class="mobile-menu" href="./images/sprite.svg#menu_mobile"></use>
+      </svg>
+    </button>
+  </header>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop-wrapper">
+      <div class="mobile-menu">
+        <svg class="logo-dark-them" width="80" height="28">
+          <use href="./images/sprite.svg#logo-dark-them"></use>
+        </svg>
+        <button class="mobile-menu-btn" type="button" data-modal-close>
+          <svg class="mobile-icons-close" width="15" height="15">
+            <use class="mobile-menu" href="./images/sprite.svg#close_mobile"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-navigation">
+        <ul class="mobile-navigation-list">
+          <li class="mobile-navigation-item">Программа обучения</li>
+          <li class="mobile-navigation-item">О нас</li>
+          <li class="mobile-navigation-item">Варианты обучения</li>
+          <li class="mobile-navigation-item">Контакты</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
