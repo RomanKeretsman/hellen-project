@@ -10,9 +10,11 @@
 <body>
   <header class="header container">
 
-    <svg class="logo-light-them" width="80" height="28">
-      <use href="./images/sprite.svg#logo-light-them"></use>
-    </svg>
+    <a class="logo-link" href="./index.html">
+      <svg class="logo-light-them" width="80" height="28">
+        <use href="./images/sprite.svg#logo-light-them"></use>
+      </svg>
+    </a>
     <nav class="header-navigation">
       <ul class="header-navigation-list">
         <li class="header-navigation-item">Программы обучения</li>
@@ -51,6 +53,11 @@
     </div>
   </div>
   <script src="./js/menu.js"></script>
+  <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+  <include src="./partials/example.html"></include>
+
+  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+  <script src="./index.js"></script>
 </body>
 
 </html>
