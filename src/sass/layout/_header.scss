@@ -10,6 +10,10 @@
     line-height: 17px;
   }
 }
+.header-navigation-item:hover,
+.header-navigation-item:focus{
+  color: #ff6b09 ;
+}
 .mobile-menu-btn:hover,
 .mobile-menu-btn:focus {
   cursor: pointer;
@@ -82,5 +86,8 @@
   }
   .header-navigation-item:not(:last-child) {
     margin-right: 40px;
+  }
+  .header-btn {
+    margin-left: auto;
   }
 }
