@@ -6,7 +6,7 @@
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
-    line-height: 136%;
+    line-height: 1,36;
     letter-spacing: 0.03em;
     color: $light-theme-header-color;
 }
@@ -22,4 +22,7 @@
     &-sentence {
         color: $light-text-color;
     }
+}
+.hero-btn {
+    margin: 0 10px;
 }
