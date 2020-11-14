@@ -18,4 +18,8 @@
     font-size: 14px;
     line-height: 1.57;
     letter-spacing: 0.08em;
+
+    &-sentence {
+        color: $light-text-color;
+    }
 }
