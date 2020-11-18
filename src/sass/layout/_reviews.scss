@@ -15,7 +15,6 @@
 /*--------------SLIDER-----------------*/
 
 .slider {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   &-items {
@@ -25,7 +24,6 @@
   &-item {
     flex: 0 0 100%;
     background: #ffffff;
-
     &-img {
       margin: 0 auto;
     }
@@ -62,6 +60,7 @@
       font-family: $main-font;
       font-weight: 500;
       color: $dark-text-color;
+      overflow: auto;
     }
     &-view-more {
       font-family: $main-font;
@@ -192,14 +191,17 @@
     &-description {
       margin-bottom: 10px;
     }
+    &-comment {
+      max-height: 257px;
+    }
   }
   .right-control {
-    bottom: -20px;
-    right: -10px;
+    right: 10px;
+    bottom: 27px;
   }
   .left-control {
-    bottom: -20px;
-    left: -10px;
+    left: 10px;
+    bottom: 27px;
   }
   .slider-preview-list {
     flex-wrap: wrap;
@@ -207,7 +209,7 @@
     height: 56px;
     overflow: hidden;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
     &-item:not(:last-child) {
       margin-right: 10px;
     }
@@ -225,6 +227,7 @@
     padding-bottom: 40px;
   }
   .slider-item {
+    height: 313px;
     &-left-side {
       width: 236px;
       padding: 40px 46px 0 40px;
@@ -246,6 +249,10 @@
     &-description {
       margin-bottom: 20px;
     }
+    &-comment {
+      width: 412px;
+      height: 139px;
+    }
   }
   .slider-items {
     margin-bottom: 30px;
@@ -256,12 +263,12 @@
     }
   }
   .right-control {
-    right: -20px;
-    top: 157px;
+    right: 0px;
+    top: 269px;
   }
   .left-control {
-    left: -20px;
-    top: 157px;
+    left: 0px;
+    top: 269px;
   }
 }
 @media screen and (min-width: 1354px) {
@@ -284,6 +291,7 @@
   }
   .slider-item {
     margin: 0 auto;
+    height: 370px;
     &-left-side {
       width: 272px;
       padding: 50px 40px 0 82px;
@@ -307,6 +315,8 @@
       width: 438px;
     }
     &-comment {
+      width: 706px;
+      height: 168px;
       font-size: 18px;
       line-height: 1.556;
     }
@@ -315,11 +325,11 @@
     margin-bottom: 40px;
   }
   .right-control {
-    right: 0px;
-    top: 185px;
+    right: 27px;
+    top: 422px;
   }
   .left-control {
-    left: 0px;
-    top: 185px;
+    left: 27px;
+    top: 422px;
   }
 }
