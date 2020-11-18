@@ -1,6 +1,7 @@
 .header {
   padding-top: 30px;
   align-items: center;
+  // background-color: ;
 
   &-btn {
     display: flex;
@@ -34,17 +35,16 @@
 .logo-link {
   display: inline-block;
 }
-.header-navigation-item-link{
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-color: $light-text-color;
+.header-navigation-item-link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: $light-text-color;
 
-&:hover,
-&:focus {
-  color: $accent-color
-}
-
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 @media screen and (max-width: 727px) {
   .logo {
@@ -63,7 +63,6 @@ color: $light-text-color;
   .header-btn {
     display: none;
   }
-  
 }
 @media screen and (min-width: 728px) {
   .logo {
@@ -80,7 +79,7 @@ color: $light-text-color;
       letter-spacing: 0.19em;
     }
   }
-  .accent-text-logo{
+  .accent-text-logo {
     color: $accent-color;
   }
 }
@@ -92,6 +91,7 @@ color: $light-text-color;
 
     &-btn {
       margin-right: 40px;
+      margin-left: auto;
     }
   }
   .logo-link {
