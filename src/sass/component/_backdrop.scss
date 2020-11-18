@@ -3,18 +3,14 @@
   visibility: hidden;
   pointer-events: none;
 }
-.backdrop-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
+
 .mobile-menu-btn-close {
   border: none;
   margin: 0;
   padding: 0;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 .backdrop {
   position: fixed;
@@ -32,6 +28,12 @@
     align-items: center;
     min-height: 100%;
     padding: 30px 20px;
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 .mobile {
