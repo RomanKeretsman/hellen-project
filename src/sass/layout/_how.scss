@@ -30,12 +30,6 @@
       margin-bottom: 15px;
     }
   }
-  // @media screen and (min-width: 728px) and (max-width: 1353px) {
-  //   margin-bottom: 27px;
-  // }
-  // @media screen and (min-width: 1354px) {
-  //   margin-bottom: 20px;
-  // }
 
   &:hover {
     background-color: $accent-color;
@@ -45,7 +39,7 @@
       color: white;
       fill: white;
     }
-    .how-list-palka {
+    .how-list-dash {
       background-color: white;
       border-color: white;
     }
@@ -69,7 +63,7 @@
   margin-bottom: 15px;
 }
 
-.how-list-palka {
+.how-list-dash {
   display: inline-block;
   background-color: $accent-color;
   border: 1px solid $accent-color;
@@ -86,16 +80,9 @@
 
   color: $light-text-color;
 }
-
 // ======== HOW MOBILE CLOSE ========
 
 // ======== HOW TABLET OPEN ========
-// @media screen and (max-width: 727px) {
-//   .how-section-item {
-//     max-width: 280px;
-//   }
-// }
-
 @media screen and (min-width: 728px) {
   .how-section {
     padding: 53px 0 47px;
@@ -108,10 +95,6 @@
     margin: 10px 10px 17px;
     padding: 40px 33px 55px;
     min-height: 334px;
-    // max-width: 334px;
-    // &:nth-last-child(1n + 1) {
-    //   margin-right: 20px;
-    // }
   }
   .how-section-title {
     font-size: 26px;
@@ -140,7 +123,6 @@
   .how-section-item {
     width: calc((100% - 6 * 10px) / 3);
     margin: 10px;
-    // max-width: 425px;
   }
   .how-section-title {
     font-size: 46px;
@@ -156,7 +138,7 @@
   .how-list-title {
     margin-bottom: 10px;
   }
-  .how-list-palka {
+  .how-list-dash {
     margin-bottom: 10px;
   }
 }
