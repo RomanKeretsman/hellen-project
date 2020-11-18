@@ -60,7 +60,6 @@
       font-family: $main-font;
       font-weight: 500;
       color: $dark-text-color;
-      overflow: auto;
     }
     &-view-more {
       font-family: $main-font;
@@ -227,7 +226,6 @@
     padding-bottom: 40px;
   }
   .slider-item {
-    height: 313px;
     &-left-side {
       width: 236px;
       padding: 40px 46px 0 40px;
@@ -248,10 +246,6 @@
     }
     &-description {
       margin-bottom: 20px;
-    }
-    &-comment {
-      width: 412px;
-      height: 139px;
     }
   }
   .slider-items {
@@ -291,7 +285,6 @@
   }
   .slider-item {
     margin: 0 auto;
-    height: 370px;
     &-left-side {
       width: 272px;
       padding: 50px 40px 0 82px;
@@ -316,7 +309,6 @@
     }
     &-comment {
       width: 706px;
-      height: 168px;
       font-size: 18px;
       line-height: 1.556;
     }
