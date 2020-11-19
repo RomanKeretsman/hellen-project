@@ -1,84 +1,81 @@
 // ======== HOW MOBILE OPEN ========
 .how-section {
   padding: 50px 0px;
-}
+  &-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
 
-.how-section-title {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.3;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
+    color: $light-theme-header-color;
+  }
+  &-item {
+    display: block;
+    width: 100%;
+    padding: 30px 10px;
+    min-height: 280px;
+    text-align: center;
 
-  color: $light-theme-header-color;
-}
+    background: $dark-theme-header-color;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.how-section-item {
-  display: block;
-  width: 100%;
-  padding: 30px 10px;
-  min-height: 280px;
-  text-align: center;
+    @media screen and (max-width: 727px) {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
 
-  background: $dark-theme-header-color;
-  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: $accent-color;
 
-  @media screen and (max-width: 727px) {
-    &:not(:last-child) {
-      margin-bottom: 15px;
+      .how-list-title,
+      .how-list-text {
+        color: white;
+        fill: white;
+      }
+      .how-list-dash {
+        background-color: white;
+        border-color: white;
+      }
+      .how-section-card-icon {
+        --color1: white;
+      }
     }
   }
+  &-card-icon {
+    margin-bottom: 20px;
+  }
+}
 
-  &:hover {
+.how-list {
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+
+    color: $light-theme-header-color;
+    margin-bottom: 15px;
+  }
+  &-dash {
+    display: inline-block;
     background-color: $accent-color;
+    border: 1px solid $accent-color;
+    width: 20px;
 
-    .how-list-title,
-    .how-list-text {
-      color: white;
-      fill: white;
-    }
-    .how-list-dash {
-      background-color: white;
-      border-color: white;
-    }
-    .how-section-card-icon {
-      --color1: white;
-    }
+    margin-bottom: 15px;
   }
-}
+  &-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
 
-.how-section-card-icon {
-  margin-bottom: 20px;
-}
-
-.how-list-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.43;
-  letter-spacing: 0.08em;
-
-  color: $light-theme-header-color;
-  margin-bottom: 15px;
-}
-
-.how-list-dash {
-  display: inline-block;
-  background-color: $accent-color;
-  border: 1px solid $accent-color;
-  width: 20px;
-
-  margin-bottom: 15px;
-}
-
-.how-list-text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.08em;
-
-  color: $light-text-color;
+    color: $light-text-color;
+  }
 }
 // ======== HOW MOBILE CLOSE ========
 
@@ -86,25 +83,24 @@
 @media screen and (min-width: 728px) {
   .how-section {
     padding: 53px 0 47px;
-  }
-  .how-section-list {
-    margin: -10px -10px -17px;
-  }
-  .how-section-item {
-    width: calc((100% - 4 * 10px) / 2);
-    margin: 10px 10px 17px;
-    padding: 40px 33px 55px;
-    min-height: 334px;
-  }
-  .how-section-title {
-    font-size: 26px;
-  }
-  .how-section-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .how-section-card-icon {
-    margin-bottom: 30px;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px -10px -17px;
+    }
+    &-item {
+      width: calc((100% - 4 * 10px) / 2);
+      margin: 10px 10px 17px;
+      padding: 40px 33px 55px;
+      min-height: 334px;
+    }
+    &-title {
+      font-size: 26px;
+    }
+    &-card-icon {
+      margin-bottom: 30px;
+    }
   }
 }
 // ======== HOW TABLET CLOSE ========
@@ -113,33 +109,33 @@
 @media screen and (min-width: 1354px) {
   .how-section {
     padding: 130px 0;
+
+    &-title {
+      text-align: start;
+      font-size: 46px;
+    }
+    &-list {
+      margin: -10px;
+    }
+    &-item {
+      width: calc((100% - 6 * 10px) / 3);
+      margin: 10px;
+    }
   }
-  .how-section-title {
-    text-align: start;
-  }
-  .how-section-list {
-    margin: -10px;
-  }
-  .how-section-item {
-    width: calc((100% - 6 * 10px) / 3);
-    margin: 10px;
-  }
-  .how-section-title {
-    font-size: 46px;
-  }
-  .how-list-title {
-    font-size: 20px;
-    line-height: 1.4;
-  }
-  .how-list-text {
-    font-size: 18px;
-    line-height: 1.56;
-  }
-  .how-list-title {
-    margin-bottom: 10px;
-  }
-  .how-list-dash {
-    margin-bottom: 10px;
+
+  .how-list {
+    &-title {
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+    &-dash {
+      margin-bottom: 10px;
+    }
   }
 }
 // ======== HOW PC CLOSE ========
