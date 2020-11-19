@@ -50,8 +50,8 @@
 }
 .hero {
   @media screen and (max-width: 727px) {
-    padding: 58px 0;
-    background-size: 100% 600px;
+    padding: 50px 0 58px;
+    background-size: 100% 592px;
     background-image: url('/images/hero/hero-line-mobile.png');
 
     @media screen and (min-device-pixel-ratio: 2),
