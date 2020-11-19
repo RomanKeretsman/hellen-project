@@ -14,7 +14,7 @@
 
   &-list-item {
     width: 245px;
-    height: 75px;
+    min-height: 75px;
     font-family: $main-font;
     font-weight: 500;
     font-size: 12px;
@@ -86,7 +86,7 @@
 
     &-list-item {
       width: 520px;
-      height: 38px;
+      min-height: 38px;
 
       &::before {
         top: 0;
@@ -125,7 +125,7 @@
 
     &-list-item {
       width: 1038px;
-      height: 60px;
+      min-height: 60px;
       font-size: 20px;
       line-height: 1.4;
 
