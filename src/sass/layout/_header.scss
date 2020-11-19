@@ -1,7 +1,7 @@
 .header {
   padding-top: 30px;
   align-items: center;
-  background-color: transparent;
+  background-color: #ffffff;
 
   &-btn {
     display: flex;
@@ -120,6 +120,13 @@
 @media screen and (min-width: 1354px) {
   .header {
     display: flex;
+
+    .modal-btn {
+      width: 354px;
+      height: 70px;
+      font-size: 14px;
+      line-height: 1.214;
+    }
 
     &-navigation {
       margin-right: 60px;
