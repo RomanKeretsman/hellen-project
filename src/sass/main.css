@@ -104,11 +104,13 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   background-color: rgba(17, 21, 24, 0.9);
   -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .backdrop-wrapper {
@@ -117,9 +119,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100%;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 30px 20px;
 }
 
 .mobile-navigation {
@@ -179,7 +179,7 @@ img {
   font-size: 20px;
   line-height: 180%;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 727px) {
@@ -249,6 +249,7 @@ img {
   line-height: 15px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .modal-btn:hover, .modal-btn:focus {
@@ -265,6 +266,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: transparent;
 }
 
 .header-btn {
@@ -369,6 +371,7 @@ img {
   }
   .header-btn {
     margin-right: 40px;
+    margin-left: auto;
   }
   .logo-link {
     margin-right: 239px;
@@ -1157,6 +1160,13 @@ img {
 
 .program-section-container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 727px) {
@@ -1175,11 +1185,11 @@ img {
 }
 
 .program-section-container::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  -webkit-transform: translateY(70%);
-          transform: translateY(70%);
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateY(-28.5%);
+          transform: translateY(-28.5%);
   display: block;
   content: '';
   width: 120px;
@@ -1197,8 +1207,8 @@ img {
 
 @media screen and (min-width: 728px) {
   .program-section-container::after {
-    -webkit-transform: translateY(55%);
-            transform: translateY(55%);
+    -webkit-transform: translate(7%, -50%);
+            transform: translate(7%, -50%);
     width: 384px;
     height: 280px;
     background-image: url("../images/program-section/program-img-tablet.png");
@@ -1213,9 +1223,11 @@ img {
 
 @media screen and (min-width: 1354px) {
   .program-section-container::after {
-    -webkit-transform: translate(-111%, 61%);
-            transform: translate(-111%, 61%);
-    width: 760px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-transform: translate(-188px, -39.5%);
+            transform: translate(-188px, -39.5%);
+    width: 672px;
     height: 502px;
     background-image: url("../images/program-section/program-img-desktop.png");
     background-position: top right;
@@ -1275,7 +1287,7 @@ img {
 @media screen and (max-width: 1353px) {
   .program-list-wrapper::before {
     position: relative;
-    top: 14px;
+    top: 8px;
     content: '';
     padding-right: 24px;
     border-left: 1px solid #ffffff;
@@ -1286,7 +1298,7 @@ img {
 @media screen and (max-width: 1353px) and (min-width: 728px) {
   .program-list-wrapper::before {
     padding-right: 50px;
-    height: 698px;
+    height: 705px;
   }
 }
 
@@ -1449,18 +1461,12 @@ img {
 
 .features-container {
   position: relative;
-  margin-top: 50px;
-}
-
-@media screen and (min-width: 728px) {
-  .features-container {
-    margin-top: 189px;
-  }
+  margin-top: -86px;
 }
 
 @media screen and (min-width: 1354px) {
   .features-container {
-    margin-top: 164px;
+    margin-top: -338px;
   }
 }
 
@@ -1645,7 +1651,6 @@ img {
 @media screen and (max-width: 727px) {
   .teacher .container {
     padding-top: 40px;
-    padding-bottom: 50px;
   }
   .teacher-title {
     margin-bottom: 20px;
@@ -1683,7 +1688,6 @@ img {
 @media screen and (min-width: 728px) {
   .teacher .container {
     padding-top: 50px;
-    padding-bottom: 50px;
   }
   .teacher-block {
     display: -webkit-box;
@@ -1731,7 +1735,6 @@ img {
 @media screen and (min-width: 1354px) {
   .teacher .container {
     padding-top: 130px;
-    padding-bottom: 130px;
   }
   .teacher-person-experience-description-svg {
     margin-right: 35px;
