@@ -1,7 +1,7 @@
 .features-list-wrapper {
   padding: 20px 30px;
 
-  background-color: $dark-theme-header-color;
+  background-color: #ffffff;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: 728px) {
@@ -15,14 +15,10 @@
 
 .features-container {
   position: relative;
-  margin-top: 50px;
-
-  @media screen and (min-width: 728px) {
-    margin-top: 189px;
-  }
+  margin-top: -86px;
 
   @media screen and (min-width: 1354px) {
-    margin-top: 164px;
+    margin-top: -338px;
   }
 }
 

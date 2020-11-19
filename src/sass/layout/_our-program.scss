@@ -3,20 +3,12 @@
   padding-top: 50px;
 
   max-width: 1680px;
-  background-image: linear-gradient(
-    to bottom,
-    $light-theme-header-color 90%,
-    $bg-color 90%
-  );
+  background-image: linear-gradient(to bottom, #111518 90%, $bg-color 90%);
 
   @media screen and (min-width: 728px) {
     padding-top: 60px;
 
-    background-image: linear-gradient(
-      to bottom,
-      $light-theme-header-color 84%,
-      $bg-color 84%
-    );
+    background-image: linear-gradient(to bottom, #111518 84%, $bg-color 84%);
   }
 
   @media screen and (min-width: 1354px) {
@@ -26,7 +18,7 @@
 
     background-image: linear-gradient(
       to bottom,
-      $light-theme-header-color 85.5%,
+      #111518 85.5%,
       $bg-color 85.5%
     );
 
@@ -36,7 +28,7 @@
       top: 280px;
 
       content: '';
-      border-top: 1px solid $dark-theme-header-color;
+      border-top: 1px solid #ffffff;
       width: 100%;
     }
   }
@@ -51,11 +43,13 @@
     align-items: center;
   }
 
+  display: flex;
+  flex-direction: column;
+
   &::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translateY(70%);
+    position: relative;
+    align-self: flex-end;
+    transform: translateY(-28.5%);
 
     display: block;
 
@@ -73,7 +67,7 @@
     }
 
     @media screen and (min-width: 728px) {
-      transform: translateY(55%);
+      transform: translate(7%, -50%);
 
       width: 384px;
       height: 280px;
@@ -87,9 +81,10 @@
     }
 
     @media screen and (min-width: 1354px) {
-      transform: translate(-111%, 61%);
+      align-self: flex-start;
+      transform: translate(-188px, -39.5%);
 
-      width: 760px;
+      width: 672px;
       height: 502px;
       background-image: url('../images/program-section/program-img-desktop.png');
       background-position: top right;
@@ -138,7 +133,7 @@
 
     &::before {
       position: relative;
-      top: 14px;
+      top: 8px;
 
       content: '';
       padding-right: 24px;
@@ -147,7 +142,7 @@
 
       @media screen and (min-width: 728px) {
         padding-right: 50px;
-        height: 698px;
+        height: 705px;
       }
     }
   }
