@@ -1964,6 +1964,7 @@ img {
 .registration-form {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 .registration-form .modal-btn {
   margin: 50px auto 0px;
