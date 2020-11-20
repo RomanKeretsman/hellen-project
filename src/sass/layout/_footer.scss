@@ -80,8 +80,8 @@
   .footer {
     display: flex;
     align-items: center;
-    padding-top: 51px;
-    padding-bottom: 51px;
+    padding-top: 42px;
+    padding-bottom: 42px;
 
     &-telephone-svg {
       width: 24px;
@@ -117,6 +117,10 @@
 }
 
 @media screen and (min-width: 1354px) {
+  .footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
   .logo-footer {
     margin-right: 355px;
   }
