@@ -10,20 +10,17 @@
   }
 
   &-navigation-item {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    @include font(700, 14px, 17px, normal);
+    text-transform: uppercase;
   }
 }
+
 .logo {
   &-link {
     display: inline-block;
   }
   &-text {
-    font-weight: bold;
-    font-size: 5px;
-    line-height: 1;
-    letter-spacing: 0.18em;
+    @include font(700, 5px, 5px, 0.18em);
     text-transform: uppercase;
     color: $light-theme-header-color;
   }
@@ -39,9 +36,6 @@
 }
 
 .header-navigation-item-link {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
   color: $light-text-color;
 
   &:hover,
@@ -77,9 +71,7 @@
       height: 32px;
     }
     &-text {
-      font-size: 8px;
-      line-height: 1;
-      letter-spacing: 0.19em;
+      @include font(700, 8px, 10px, 0.18em);
     }
   }
   .accent-text-logo {

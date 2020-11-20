@@ -25,10 +25,7 @@
 .features-container .title {
   margin-bottom: 30px;
 
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
+  @include font(800, 20px, 27px, 0.03em);
   color: $dark-theme-header-color;
 
   @media screen and (max-width: 727px) {
@@ -58,10 +55,7 @@
 }
 
 .features-list-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.429;
-  letter-spacing: 0.08em;
+  @include font(700, 14px, 20px, 0.08em);
   color: $light-theme-header-color;
 
   &::before {
@@ -70,10 +64,7 @@
 
     content: '— 0' counter(item);
     counter-increment: item;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.649;
-    letter-spacing: 0.08em;
+    @include font(700, 14px, 23px, 0.08em);
     color: $accent-color;
 
     @media screen and (min-width: 1354px) {

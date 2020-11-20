@@ -2,11 +2,7 @@
   padding-top: 54px;
 
   &-title {
-    font-family: $main-font;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 1.308;
-    letter-spacing: 0.03em;
+    @include font(800, 26px, 34px, 0.03em);
     text-align: center;
     color: $light-theme-header-color;
     margin-bottom: 23px;
@@ -15,10 +11,7 @@
   &-list-item {
     width: 245px;
     height: 75px;
-    font-family: $main-font;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.667;
+    @include font(500, 12px, 20px, normal);
     color: $dark-text-color;
     position: relative;
 
@@ -28,8 +21,6 @@
 
     &::before {
       content: '';
-      width: 15px;
-      height: 20px;
       position: absolute;
       display: block;
       width: 15px;
