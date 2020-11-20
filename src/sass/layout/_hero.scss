@@ -2,7 +2,6 @@
   @media screen and (max-width: 727px) {
     margin: 0 0 30px;
   }
-
   @media screen and (min-width: 728px) {
     width: 332px;
   }
@@ -10,31 +9,23 @@
     width: 608px;
   }
 }
+
 .hero-title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
+  @include font(800, 20px, 27px, 0.03em);
   color: $light-theme-header-color;
+
   @media screen and (min-width: 728px) {
     font-size: 26px;
     line-height: 1.3;
   }
   @media screen and (min-width: 1354px) {
     font-size: 58px;
-    line-height: 1.3;
   }
 }
+
 .hero-description {
   margin: 30px 0;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.57;
-  letter-spacing: 0.08em;
+  @include font(500, 14px, 22px, 0.08em);
 
   @media screen and (min-width: 728px) and (max-width: 1353px) {
     width: 300px;
@@ -48,6 +39,7 @@
     color: $light-text-color;
   }
 }
+
 .hero {
   @media screen and (max-width: 727px) {
     padding: 58px 0;

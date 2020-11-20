@@ -22,10 +22,7 @@
     }
 
     &-text {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.429;
-      letter-spacing: 0.08em;
+      @include font(700, 14px, 20px, 0.08em);
 
       color: #111518;
       margin-left: 15px;

@@ -8,3 +8,10 @@
   width: 1px !important;
   overflow: hidden;
 }
+
+@mixin font($weight, $size, $line-height, $letter-spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height / $size;
+  letter-spacing: $letter-spacing;
+}
