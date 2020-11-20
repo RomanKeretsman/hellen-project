@@ -9,12 +9,9 @@
   }
 
   &-title {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.36;
-    letter-spacing: 0.03em;
+    @include font(800, 20px, 27px, 0.03em);
 
-    color: #ffffff;
+    color: $dark-theme-header-color;
     margin-bottom: 27px;
   }
 
@@ -36,20 +33,12 @@
       content: '— 0' counter(item);
       counter-increment: item;
 
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.214;
-      letter-spacing: 0.08em;
-
+      @include font(700, 14px, 17px, 0.08em);
       color: $accent-color;
     }
 
     &-text {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.08em;
-
+      @include font(700, 14px, 24px, 0.08em);
       color: #111518;
       margin-top: 5px;
       white-space: pre-line;

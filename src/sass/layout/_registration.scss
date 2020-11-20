@@ -8,24 +8,15 @@
   background-position: center;
   padding: 50px 0;
   &-title {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 1.357;
+    @include font(800, 14px, 19px, 0.03em);
     margin-bottom: 30px;
-
     text-align: center;
-    letter-spacing: 0.03em;
 
     color: $dark-theme-header-color;
   }
   &-description {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
+    @include font(600, 12px, 15px, 0.08em);
     text-align: center;
-    letter-spacing: 0.08em;
     margin-bottom: 30px;
 
     color: $dark-theme-header-color;
@@ -42,10 +33,7 @@
     }
     border: 1px solid $dark-theme-header-color;
     &::placeholder {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 1.214;
-      letter-spacing: 0.08em;
+      @include font(600, 14px, 17px, 0.08em);
 
       color: $dark-theme-header-color;
     }

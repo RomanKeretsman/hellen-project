@@ -2,11 +2,8 @@
 .how-section {
   padding: 50px 0px;
   &-title {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.3;
+    @include font(800, 20px, 26px, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 30px;
 
     color: $light-theme-header-color;
@@ -52,10 +49,7 @@
 
 .how-list {
   &-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.43;
-    letter-spacing: 0.08em;
+    @include font(700, 14px, 20px, 0.08em);
 
     color: $light-theme-header-color;
     margin-bottom: 15px;
@@ -69,10 +63,7 @@
     margin-bottom: 15px;
   }
   &-text {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.08em;
+    @include font(500, 12px, 20px, 0.08em);
 
     color: $light-text-color;
   }

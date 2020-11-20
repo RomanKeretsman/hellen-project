@@ -2,13 +2,8 @@
   position: relative;
   overflow: hidden;
   &-title {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 130%;
+    @include font(800, 20px, 26px, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: $light-theme-header-color;
   }
 }
@@ -45,24 +40,20 @@
     }
 
     &-name {
-      font-family: $main-font;
       font-weight: 800;
       letter-spacing: 0.08em;
       color: $accent-color;
     }
     &-description {
-      font-family: $main-font;
       font-weight: 500;
       letter-spacing: 0.08em;
       color: $light-text-color;
     }
     &-comment {
-      font-family: $main-font;
       font-weight: 500;
       color: $dark-text-color;
     }
     &-view-more {
-      font-family: $main-font;
       color: $accent-color;
     }
   }
