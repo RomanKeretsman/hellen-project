@@ -28,6 +28,7 @@
     background-color: transparent;
     color: $dark-theme-header-color;
     outline: transparent;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
       border-color: $accent-color;
     }
@@ -48,6 +49,7 @@
   margin: 0 auto;
   .modal-btn {
     margin: 50px auto 0px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (max-width: 320px) {

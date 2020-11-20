@@ -1,16 +1,20 @@
-<section class="registration">
+<section class="registration" id="consultation-by-phone">
     <div class="container">
-        <h2 id="consultation-by-phone" class="registration-title">Регистрация на <span
-                class="accent-text">бесплатную</span> телефонную <span class="accent-text">консультацию</span> по
+        <h2 class="registration-title">Регистрация на <span class="accent-text">бесплатную</span> телефонную <span
+                class="accent-text">консультацию</span> по
             нюансам ЗНО
             по английскому языку</h2>
         <p class="registration-description">Оставь заявку на участие в <span class="accent-text">бесплатном
                 занятии.</span><br>
             С вами свяжется консультант и ответит на вопросы</p>
         <form class="registration-form">
-            <input class="registration-input" id="name" type="text" name="name" placeholder="Имя*" required>
+            <input class="registration-input" id="name" pattern="[A-Za-zА-Яа-яЁё]{3,12}" maxlength="12" type="text"
+                name="name" placeholder="Имя*" title="Введите
+                только имя, которое должно содержать буквы украинского, русского или латинского алфавита длинной
+                символов от 3 до 12." required>
             <label class="visually-hidden" for="name">Имя</label>
-            <input class="registration-input" id="telephone" type="tel" name="telephone" placeholder="Телефон*"
+            <input class="registration-input" id="telephone" type="tel" name="telephone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон*" title="Формат воода номера:(095-123-1234)"
                 required>
             <label for="telephone" class="visually-hidden">Телефон</label>
             <button class="modal-btn" type="submit" aria-label="хочу на бесплатное занятие">хочу на бесплатное
