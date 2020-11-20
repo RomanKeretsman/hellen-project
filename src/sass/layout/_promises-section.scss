@@ -10,8 +10,9 @@
 
   &-list-item {
     width: 245px;
-    height: 75px;
+    min-height: 75px;
     @include font(500, 12px, 20px, normal);
+    
     color: $dark-text-color;
     position: relative;
 
@@ -77,7 +78,7 @@
 
     &-list-item {
       width: 520px;
-      height: 38px;
+      min-height: 38px;
 
       &::before {
         top: 0;
@@ -116,7 +117,7 @@
 
     &-list-item {
       width: 1038px;
-      height: 60px;
+      min-height: 60px;
       font-size: 20px;
       line-height: 1.4;
 
